@@ -1,8 +1,8 @@
-package j09_접근지정자.캡슐;
+package j09_접근지정자.캡슐화;
 
 public class Student {
     private String name;
-    private String gender;
+    public String gender;
 
     public Student(){}
 
@@ -15,9 +15,8 @@ public class Student {
         this.name = name;
     }
 
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
+    public String getName() { return name; }
+
 
     public void printInfo() {
         System.out.println("Name: " + name);
