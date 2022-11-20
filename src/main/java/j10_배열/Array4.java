@@ -23,7 +23,80 @@ public class Array4 {
 
     public static int cmpMax(int[] array1, int[] array2){
         int max = 0;
+        /*int[] array3 = new int[array1.length + array2.length];
+        boolean diff = true;
+        int cnt = 0;
 
+        for(int i = 0; i < array1.length; i++){
+            diff = true;
+            for(int j = 0; j < array2.length; j++){
+                if(array1[i] == array2[j]){
+                    diff = false;
+                    break;
+                }
+            }
+            if(diff){
+                array3[cnt] = array1[i];
+                cnt++;
+            }
+        }
+
+        for(int i = 0; i < array2.length; i++){
+            diff = true;
+            for(int j = 0; j < array1.length; j++){
+                if(array1[j] == array2[i]){
+                    diff = false;
+                    break;
+                }
+            }
+            if(diff){
+                array3[cnt] = array2[i];
+                cnt++;
+            }
+        }
+
+        max = array3[0];
+        for(int i = 0; i < array3.length; i++){
+            if(max < array3[i]){
+                max = array3[i];
+            }
+        }*/
+
+        boolean firstvalue = true;
+        boolean flag = true;
+        for(int i=0; i<array1.length; i++){
+            flag = true;
+            for(int j=0; j<array2.length; j++){
+                if(array1[i]==array2[j]) {
+                    flag = false;
+                    break;
+                }
+            }
+            if(flag){
+                if (firstvalue) {
+                    max = array1[i];
+                    firstvalue = false;
+                }
+                if(array1[i] > max) {
+                    max = array1[i];
+                }
+            }
+        }
+
+        for(int i=0; i<array2.length; i++){
+            flag = true;
+            for(int j=0; j<array1.length; j++){
+                if(array1[j]==array2[i]) {
+                    flag = false;
+                    break;
+                }
+            }
+            if(flag){
+                if(array2[i] > max) {
+                    max = array2[i];
+                }
+            }
+        }
         return max;
     }
 
