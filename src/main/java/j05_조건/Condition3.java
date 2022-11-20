@@ -14,14 +14,14 @@ public class Condition3 {
         switch (select){
             case "아침":
                 System.out.println("아침 식사");
-                break;
+                break;  // break문을 사용하지 않으면 아래 명령도 모두 실행
             case "점심":
                 System.out.println("점심 식사");
                 break;
             case "저녁":
                 System.out.println("저녁 식사");
                 break;
-            default:
+            default: // 나머지의 모든 경우
                 System.out.println("잘못된 입력입니다.");
         }
     }
