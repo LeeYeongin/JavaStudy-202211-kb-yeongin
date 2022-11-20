@@ -10,11 +10,11 @@ public class Input1 {
         String phone = null;
         String address = null;
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in); //Scanner class 생성
 
-        name = scanner.nextLine();
-        age = scanner.nextInt();
-        scanner.nextLine(); // Enter 입력을 날려주는 역할
+        name = scanner.nextLine(); //띄어쓰기, Enter 입력 포함
+        age = scanner.nextInt(); //띄어쓰기, Enter 입력 포함X
+        scanner.nextLine(); //Enter 입력을 날려주는 역할
         phone = scanner.nextLine();
         address = scanner.nextLine();
 
