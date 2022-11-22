@@ -19,7 +19,6 @@ public class AnimalMain {
             animals[i].move();
         }
 
-
         // 하위클래스 고유의 메소드를 사용하고 싶을때
         for(int i = 0; i < animals.length; i++){
             if(animals[i] instanceof Human){    //생성될때 Human객체였다면
