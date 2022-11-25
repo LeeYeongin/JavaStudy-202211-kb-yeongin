@@ -2,7 +2,7 @@ package j14_스태틱.빌더;
 
 public class UserMain {
     public static void main(String[] args) {
-        User user = User.builder()  // builder는 static 메소드
+        User user = User.builder()  // builder는 static 메소드, user메소드 호출
                 .username("junil")  // username의 주소를 return
                 .password("1234")
                 .email("skjil1218@kakao.com")
