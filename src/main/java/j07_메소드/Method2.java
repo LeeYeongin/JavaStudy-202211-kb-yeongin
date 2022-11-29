@@ -9,9 +9,7 @@ public class Method2 {
         System.out.println("이름: " + name);
     }
 
-    public static void print(int age){
-        System.out.println("나이: " + age);
-    }
+    public static void print(int age){ System.out.println("나이: " + age); }
 
     public static void print(String name, int age){
         System.out.println("이름: " + name + " 나이: " + age);
