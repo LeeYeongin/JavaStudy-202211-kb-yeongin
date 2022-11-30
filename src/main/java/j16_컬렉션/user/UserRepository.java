@@ -19,7 +19,6 @@ public class UserRepository {
 		userList.add(userMap);
 	}
 	
-	
 	//Read
 	public Map<String, Object> findUserByUsername(String username) {
 		Map<String, Object> userMap = null;
